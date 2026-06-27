@@ -27,6 +27,7 @@ body {
 	margin: 0;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	color: var(--navy-900);
+	overflow-x: hidden;
 	background:
 		radial-gradient(circle at top left, rgba(169, 222, 255, 0.45), transparent 32%),
 		linear-gradient(180deg, var(--sky-50) 0%, #eef9ff 48%, #ffffff 100%);
@@ -182,7 +183,8 @@ img {
 .hero {
 	position: relative;
 	padding: 5.5rem 0 3.5rem;
-	overflow: visible;
+	overflow-x: clip;
+	overflow-y: visible;
 	z-index: 2;
 	background:
 		radial-gradient(circle at 15% 20%, rgba(79, 183, 238, 0.22), transparent 24%),
@@ -921,6 +923,18 @@ h1 {
 
 	.hero {
 		padding-top: 3rem;
+	}
+
+	.hero::before {
+		left: -8rem;
+		width: 14rem;
+		height: 14rem;
+	}
+
+	.hero::after {
+		right: -8rem;
+		width: 16rem;
+		height: 16rem;
 	}
 
 	.hero-grid,
