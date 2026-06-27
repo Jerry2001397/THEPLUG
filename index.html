@@ -13,7 +13,12 @@
 				<span class="brand-mark">P</span>
 				<span>The Plug</span>
 			</a>
-			<nav class="nav-links" aria-label="Primary navigation">
+			<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<nav class="nav-links" id="primary-nav" aria-label="Primary navigation">
 				<a href="#services">Services</a>
 				<a href="#projects">Projects</a>
 				<a href="#reviews">Reviews</a>
@@ -461,10 +466,13 @@
 	<script>
 		const bookingSection = document.querySelector(".booking-section");
 		const bookingCloseButton = document.querySelector(".booking-close");
+		const menuToggle = document.querySelector(".menu-toggle");
+		const primaryNav = document.querySelector("#primary-nav");
 		const heroSearchForm = document.querySelector(".hero-search");
 		const heroSearchInput = document.querySelector("#service-search");
 		const searchSuggestions = document.querySelector("#service-suggestions");
 		const serviceButtons = document.querySelectorAll(".service-book-button");
+		const navLinks = document.querySelectorAll(".nav-links a");
 		const serviceInputs = document.querySelectorAll('input[name="services"]');
 		const availableServices = Array.from(serviceInputs, (input) => input.value);
 
@@ -545,6 +553,20 @@
 			if (!heroSearchForm.contains(event.target)) {
 				searchSuggestions.classList.remove("is-visible");
 			}
+		});
+
+		menuToggle.addEventListener("click", () => {
+			const isOpen = primaryNav.classList.toggle("is-open");
+			menuToggle.classList.toggle("is-open", isOpen);
+			menuToggle.setAttribute("aria-expanded", String(isOpen));
+		});
+
+		navLinks.forEach((link) => {
+			link.addEventListener("click", () => {
+				primaryNav.classList.remove("is-open");
+				menuToggle.classList.remove("is-open");
+				menuToggle.setAttribute("aria-expanded", "false");
+			});
 		});
 
 		bookingCloseButton.addEventListener("click", () => {
