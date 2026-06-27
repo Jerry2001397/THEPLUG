@@ -41,7 +41,7 @@
 					</p>
 					<form class="hero-search" action="#services">
 						<div class="hero-search-row">
-							<input id="service-search" name="service-search" type="search" placeholder="Search assembly, cleaning, moving, repairs..." aria-label="Search for your service" autocomplete="off">
+							<input id="service-search" name="service-search" type="search" placeholder="Clich here to fine service quickly" aria-label="Search for your service" autocomplete="off">
 							<button class="button" type="submit">Search</button>
 						</div>
 						<div class="search-suggestions" id="service-suggestions" role="listbox" aria-label="Available services"></div>
@@ -459,7 +459,7 @@
 					</div>
 				</article>
 			</div>
-			<p class="footer-bottom">Copyright 2026 The Plug. Built for a fast, modern home-services landing page.</p>
+			<p class="footer-bottom">Copyright 2026 The Plug.<br><span class="footer-powered">Powered by Tech Bridge Liberia-TBL.</span></p>
 		</div>
 	</footer>
 
@@ -475,6 +475,7 @@
 		const navLinks = document.querySelectorAll(".nav-links a");
 		const serviceInputs = document.querySelectorAll('input[name="services"]');
 		const availableServices = Array.from(serviceInputs, (input) => input.value);
+		let ignoreNextSearchClick = false;
 
 		const setBookingVisibility = (isVisible) => {
 			bookingSection.classList.toggle("is-visible", isVisible);
@@ -525,7 +526,21 @@
 		});
 
 		heroSearchInput.addEventListener("focus", () => {
+			ignoreNextSearchClick = true;
 			renderSuggestions(heroSearchInput.value);
+		});
+
+		heroSearchInput.addEventListener("click", () => {
+			if (ignoreNextSearchClick) {
+				ignoreNextSearchClick = false;
+				return;
+			}
+
+			searchSuggestions.classList.toggle("is-visible");
+
+			if (searchSuggestions.classList.contains("is-visible")) {
+				renderSuggestions(heroSearchInput.value);
+			}
 		});
 
 		heroSearchInput.addEventListener("input", () => {

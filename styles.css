@@ -848,6 +848,19 @@ h1 {
 	font-size: 0.95rem;
 }
 
+.footer-powered {
+	display: inline-block;
+	margin-top: 0.3rem;
+	font-weight: 800;
+	letter-spacing: 0.01em;
+	background: linear-gradient(135deg, #147db5 0%, #4fb7ee 40%, #ffffff 52%, #4fb7ee 64%, #147db5 100%);
+	background-size: 220% auto;
+	color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+	text-shadow: 0 0 18px rgba(79, 183, 238, 0.22);
+}
+
 @media (max-width: 1024px) {
 	.hero-grid,
 	.projects-grid,
