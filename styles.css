@@ -798,10 +798,10 @@ h1 {
 	width: 2.8rem;
 	height: 2.8rem;
 	border-radius: 50%;
-	background: linear-gradient(135deg, var(--sky-300), var(--sky-700));
-	display: grid;
-	place-items: center;
-	color: var(--white);
+	object-fit: cover;
+	object-position: center;
+	border: 2px solid rgba(255, 255, 255, 0.95);
+	box-shadow: 0 8px 18px rgba(20, 125, 181, 0.16);
 }
 
 .trust-grid,
