@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Plug | Trusted Help For Home Tasks</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container nav-bar">
+			<a class="brand" href="#top" aria-label="The Plug home page">
+				<span class="brand-mark">P</span>
+				<span>The Plug</span>
+			</a>
+			<nav class="nav-links" aria-label="Primary navigation">
+				<a href="#services">Services</a>
+				<a href="#projects">Projects</a>
+				<a href="#reviews">Reviews</a>
+				<a href="#how-it-works">How It Works</a>
+				<a class="button-secondary" href="#book">Book Now</a>
+			</nav>
+		</div>
+	</header>
+
+	<main id="top">
+		<section class="hero">
+			<div class="container hero-grid">
+				<div class="hero-copy">
+					<span class="eyebrow">Trusted help, on your schedule</span>
+					<h1>Book reliable home help without the hassle.</h1>
+					<p>
+						The Plug connects you with skilled local taskers for assembly, moving,
+						mounting, cleaning, repairs, and everyday home projects. Fast booking,
+						clear pricing, and support when you need it.
+					</p>
+					<form class="hero-search" action="#services">
+						<div class="hero-search-row">
+							<input id="service-search" name="service-search" type="search" placeholder="Search assembly, cleaning, moving, repairs..." aria-label="Search for your service" autocomplete="off">
+							<button class="button" type="submit">Search</button>
+						</div>
+						<div class="search-suggestions" id="service-suggestions" role="listbox" aria-label="Available services"></div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="services">
+			<div class="container">
+				<div class="section-heading">
+					<div>
+						<h2>Services for every room and every task</h2>
+						<p class="section-intro">
+							Modeled after a high-conversion home services layout, adapted for The Plug with a brighter light blue identity.
+						</p>
+					</div>
+				</div>
+
+				<div class="category-grid">
+					<article class="category-card">
+						<img class="category-image" src="https://loremflickr.com/640/420/furniture,assembly?lock=11" alt="Furniture assembly service" loading="lazy">
+						<div class="category-content">
+							<h3>Assembly</h3>
+							<p>Furniture builds, storage setup, office desks, and nursery items.</p>
+							<a class="service-book-button" href="#booking-form" data-service="Assembly">Book Service Now</a>
+						</div>
+					</article>
+					<article class="category-card">
+						<img class="category-image" src="https://loremflickr.com/640/420/tv,mounting?lock=12" alt="TV and wall mounting service" loading="lazy">
+						<div class="category-content">
+							<h3>Mounting</h3>
+							<p>TVs, shelves, mirrors, art, curtain rods, and wall decor.</p>
+							<a class="service-book-button" href="#booking-form" data-service="Mounting">Book Service Now</a>
+						</div>
+					</article>
+					<article class="category-card">
+						<img class="category-image" src="https://loremflickr.com/640/420/moving,boxes?lock=13" alt="Moving help service" loading="lazy">
+						<div class="category-content">
+							<h3>Moving Help</h3>
+							<p>Apartment moves, heavy lifting, loading, unloading, and rearranging.</p>
+							<a class="service-book-button" href="#booking-form" data-service="Moving Help">Book Service Now</a>
+						</div>
+					</article>
+					<article class="category-card">
+						<img class="category-image" src="https://loremflickr.com/640/420/house,cleaning?lock=14" alt="Home cleaning service" loading="lazy">
+						<div class="category-content">
+							<h3>Cleaning</h3>
+							<p>Routine cleaning, deep cleans, turnover prep, and reset services.</p>
+							<a class="service-book-button" href="#booking-form" data-service="Cleaning">Book Service Now</a>
+						</div>
+					</article>
+					<article class="category-card">
+						<img class="category-image" src="https://loremflickr.com/640/420/home,repair?lock=15" alt="Home repairs service" loading="lazy">
+						<div class="category-content">
+							<h3>Repairs</h3>
+							<p>Minor fixes, patchwork, touch-ups, doors, handles, and more.</p>
+							<a class="service-book-button" href="#booking-form" data-service="Repairs">Book Service Now</a>
+						</div>
+					</article>
+					<article class="category-card">
+						<img class="category-image" src="https://loremflickr.com/640/420/painting,wall?lock=16" alt="Painting service" loading="lazy">
+						<div class="category-content">
+							<h3>Painting</h3>
+							<p>Accent walls, touch-up painting, trim refresh, and room prep.</p>
+							<a class="service-book-button" href="#booking-form" data-service="Painting">Book Service Now</a>
+						</div>
+					</article>
+					<article class="category-card">
+						<img class="category-image" src="https://loremflickr.com/640/420/yardwork,garden?lock=17" alt="Outdoor help service" loading="lazy">
+						<div class="category-content">
+							<h3>Outdoor Help</h3>
+							<p>Yard cleanup, patio setup, seasonal prep, and exterior projects.</p>
+							<a class="service-book-button" href="#booking-form" data-service="Outdoor Help">Book Service Now</a>
+						</div>
+					</article>
+					<article class="category-card">
+						<img class="category-image" src="https://loremflickr.com/640/420/delivery,shopping?lock=18" alt="Errands and pickup service" loading="lazy">
+						<div class="category-content">
+							<h3>Errands</h3>
+							<p>Pickup help, deliveries, local runs, and personal assistance.</p>
+							<a class="service-book-button" href="#booking-form" data-service="Errands">Book Service Now</a>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="section booking-section" id="booking-form" aria-hidden="true">
+			<div class="container">
+				<div class="section-heading">
+					<div>
+						<h2>Book your service</h2>
+						<p>Tell us where you need help, which services you want, and the best time to reach you.</p>
+					</div>
+					<button class="booking-close" type="button" aria-label="Close booking form">Close</button>
+				</div>
+
+				<form class="booking-form-panel">
+					<div class="form-grid">
+						<label class="form-field form-field-wide">
+							<span>Location</span>
+							<input type="text" name="location" placeholder="Enter your city or address" required>
+						</label>
+
+						<fieldset class="form-field form-field-wide service-options">
+							<legend>Services</legend>
+							<div class="service-checklist">
+								<label><input type="checkbox" name="services" value="Assembly"> <span>Assembly</span></label>
+								<label><input type="checkbox" name="services" value="Mounting"> <span>Mounting</span></label>
+								<label><input type="checkbox" name="services" value="Moving Help"> <span>Moving Help</span></label>
+								<label><input type="checkbox" name="services" value="Cleaning"> <span>Cleaning</span></label>
+								<label><input type="checkbox" name="services" value="Repairs"> <span>Repairs</span></label>
+								<label><input type="checkbox" name="services" value="Painting"> <span>Painting</span></label>
+								<label><input type="checkbox" name="services" value="Outdoor Help"> <span>Outdoor Help</span></label>
+								<label><input type="checkbox" name="services" value="Errands"> <span>Errands</span></label>
+							</div>
+						</fieldset>
+
+						<label class="form-field">
+							<span>Name</span>
+							<input type="text" name="name" placeholder="Your full name" required>
+						</label>
+
+						<label class="form-field">
+							<span>Contact</span>
+							<input type="text" name="contact" placeholder="Phone number or email" required>
+						</label>
+
+						<label class="form-field form-field-wide">
+							<span>Preferred Time</span>
+							<input type="datetime-local" name="preferred-time" required>
+						</label>
+
+						<label class="form-field form-field-wide">
+							<span>Extra Details</span>
+							<textarea name="details" rows="4" placeholder="Add any notes about the task, number of items, or urgency."></textarea>
+						</label>
+					</div>
+
+					<div class="form-actions">
+						<button class="button" type="submit">Book Service Now</button>
+						<p class="form-note">Select one or more services above. The service buttons on each card will preselect the matching option here.</p>
+					</div>
+				</form>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="container">
+				<div class="stats-grid">
+					<article class="stat-card">
+						<strong>3.4M+</strong>
+						<span>assemblies completed</span>
+					</article>
+					<article class="stat-card">
+						<strong>1.5M+</strong>
+						<span>moving tasks handled</span>
+					</article>
+					<article class="stat-card">
+						<strong>1M+</strong>
+						<span>items mounted</span>
+					</article>
+					<article class="stat-card">
+						<strong>700K+</strong>
+						<span>home repairs delivered</span>
+					</article>
+					<article class="stat-card">
+						<strong>890K+</strong>
+						<span>homes cleaned</span>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="projects">
+			<div class="container">
+				<div class="section-heading">
+					<div>
+						<h2>Popular projects people book fast</h2>
+						<p>Keep pricing simple and scannable so visitors can move from browsing to booking without friction.</p>
+					</div>
+					<a class="button-secondary" href="#book">See all services</a>
+				</div>
+
+				<div class="projects-grid">
+					<article class="project-card">
+						<div class="project-head">
+							<span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7.5h16v9H4zM7.5 7.5V5h9v2.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+							<div>
+						<span class="project-tag">Best seller</span>
+						<h3>Furniture Assembly</h3>
+							</div>
+						</div>
+						<p>Desks, bed frames, dressers, nursery items, and flat-pack builds handled cleanly.</p>
+						<div class="price-row">
+							<strong>$49</strong>
+							<span>starting price</span>
+						</div>
+					</article>
+					<article class="project-card">
+						<div class="project-head">
+							<span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 6.5h9v5H4zM13 9h7M16.5 9v9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.5 18h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+							<div>
+						<span class="project-tag">Most booked</span>
+						<h3>Mount Art Or Shelves</h3>
+							</div>
+						</div>
+						<p>Secure shelf installs, clean measurements, and a polished wall finish.</p>
+						<div class="price-row">
+							<strong>$65</strong>
+							<span>starting price</span>
+						</div>
+					</article>
+					<article class="project-card">
+						<div class="project-head">
+							<span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 14h11l2-5h3l2 5h1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7" cy="17" r="2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="18" cy="17" r="2" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></span>
+							<div>
+						<span class="project-tag">Fast turnaround</span>
+						<h3>Help Moving</h3>
+							</div>
+						</div>
+						<p>Loading, unloading, apartment transitions, and in-home furniture rearranging.</p>
+						<div class="price-row">
+							<strong>$69</strong>
+							<span>starting price</span>
+						</div>
+					</article>
+					<article class="project-card">
+						<div class="project-head">
+							<span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 14c0-3 2.2-5 5-5s5 2 5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M6 14h12l-1.2 4H7.2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 7.5h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+							<div>
+						<span class="project-tag">Clean home</span>
+						<h3>Home Cleaning</h3>
+							</div>
+						</div>
+						<p>Routine upkeep, turnover cleans, and deep refreshes for busy households.</p>
+						<div class="price-row">
+							<strong>$55</strong>
+							<span>starting price</span>
+						</div>
+					</article>
+					<article class="project-card">
+						<div class="project-head">
+							<span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M13 4l7 7-2.5 2.5-7-7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M11.5 5.5l7 7L9 22H2v-7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+							<div>
+						<span class="project-tag">Quick fix</span>
+						<h3>Minor Repairs</h3>
+							</div>
+						</div>
+						<p>Patchwork, hardware fixes, adjustments, and common home maintenance tasks.</p>
+						<div class="price-row">
+							<strong>$74</strong>
+							<span>starting price</span>
+						</div>
+					</article>
+					<article class="project-card">
+						<div class="project-head">
+							<span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="6" width="14" height="10" rx="1.8" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M18 9l3-2v8l-3-2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+							<div>
+						<span class="project-tag">Indoor setup</span>
+						<h3>TV Mounting</h3>
+							</div>
+						</div>
+						<p>Strong installs, clean cable layout, and balanced screen placement.</p>
+						<div class="price-row">
+							<strong>$79</strong>
+							<span>starting price</span>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="reviews">
+			<div class="container">
+				<div class="section-heading">
+					<div>
+						<h2>What customers are saying</h2>
+						<p>Testimonials give the page the same trust-building cadence as the reference site without copying its exact content.</p>
+					</div>
+				</div>
+
+				<div class="testimonials-grid">
+					<article class="testimonial-card">
+						<p>
+							My dresser, desk, and shelving unit were all assembled faster than I expected.
+							The process felt organized from start to finish.
+						</p>
+						<div class="testimonial-author">
+							<div class="avatar">J</div>
+							<div>
+								<div>Jordan P.</div>
+								<small>Furniture Assembly</small>
+							</div>
+						</div>
+					</article>
+					<article class="testimonial-card">
+						<p>
+							The Plug made it easy to find help for mounting a TV and floating shelves.
+							Clean install, good communication, no stress.
+						</p>
+						<div class="testimonial-author">
+							<div class="avatar">A</div>
+							<div>
+								<div>Ariana L.</div>
+								<small>Mounting</small>
+							</div>
+						</div>
+					</article>
+					<article class="testimonial-card">
+						<p>
+							I booked moving help and same-day cleaning after my apartment switch.
+							That combination saved me an entire weekend.
+						</p>
+						<div class="testimonial-author">
+							<div class="avatar">M</div>
+							<div>
+								<div>Marcus T.</div>
+								<small>Moving + Cleaning</small>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="container">
+				<div class="section-heading">
+					<div>
+						<h2>Your satisfaction, guaranteed</h2>
+						<p>Use reassurance blocks to reduce booking hesitation and make the service feel dependable.</p>
+					</div>
+				</div>
+
+				<div class="trust-grid">
+					<article class="trust-card">
+						<h3>Reliable support</h3>
+						<p>Questions, updates, and follow-through when you need a quick answer or a booking adjustment.</p>
+					</article>
+					<article class="trust-card">
+						<h3>Vetted taskers</h3>
+						<p>Skilled help matched to the task so customers feel confident before the work even starts.</p>
+					</article>
+					<article class="trust-card">
+						<h3>Transparent pricing</h3>
+						<p>Simple starting prices and clearly presented service options keep expectations aligned.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="how-it-works">
+			<div class="container">
+				<div class="section-heading">
+					<div>
+						<h2>How it works</h2>
+						<p>Keep the flow direct: choose the task, pick your timing, then manage the job in one place.</p>
+					</div>
+				</div>
+
+				<div class="steps-grid">
+					<article class="step-card">
+						<div class="step-number">1</div>
+						<h3>Choose a service</h3>
+						<p>Start with the exact type of help you need, from setup work to repairs and cleaning.</p>
+					</article>
+					<article class="step-card">
+						<div class="step-number">2</div>
+						<h3>Pick a convenient time</h3>
+						<p>Schedule around your day and get help as early as today for urgent household needs.</p>
+					</article>
+					<article class="step-card">
+						<div class="step-number">3</div>
+						<h3>Relax while it gets done</h3>
+						<p>Track the job, stay in touch, and enjoy a finished result without the back-and-forth.</p>
+					</article>
+				</div>
+
+				<div class="cta-banner">
+					<div>
+						<h3>Need help today?</h3>
+						<p>Book a task in minutes and keep your weekend free for something better.</p>
+					</div>
+					<a class="button-secondary" href="#top">Start Booking</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<div class="footer-grid">
+				<article class="footer-card">
+					<h3>The Plug</h3>
+					<p>Trusted home help with a clean booking experience and a fresh light blue visual identity.</p>
+				</article>
+				<article class="footer-card">
+					<h3>Popular services</h3>
+					<div class="footer-links">
+						<a href="#projects">Furniture Assembly</a>
+						<a href="#projects">TV Mounting</a>
+						<a href="#projects">Home Cleaning</a>
+						<a href="#projects">Help Moving</a>
+					</div>
+				</article>
+				<article class="footer-card">
+					<h3>Company</h3>
+					<div class="footer-links">
+						<a href="#services">Services</a>
+						<a href="#reviews">Reviews</a>
+						<a href="#how-it-works">How It Works</a>
+						<a href="#book">Book Now</a>
+					</div>
+				</article>
+			</div>
+			<p class="footer-bottom">Copyright 2026 The Plug. Built for a fast, modern home-services landing page.</p>
+		</div>
+	</footer>
+
+	<script>
+		const bookingSection = document.querySelector(".booking-section");
+		const bookingCloseButton = document.querySelector(".booking-close");
+		const heroSearchForm = document.querySelector(".hero-search");
+		const heroSearchInput = document.querySelector("#service-search");
+		const searchSuggestions = document.querySelector("#service-suggestions");
+		const serviceButtons = document.querySelectorAll(".service-book-button");
+		const serviceInputs = document.querySelectorAll('input[name="services"]');
+		const availableServices = Array.from(serviceInputs, (input) => input.value);
+
+		const setBookingVisibility = (isVisible) => {
+			bookingSection.classList.toggle("is-visible", isVisible);
+			bookingSection.setAttribute("aria-hidden", String(!isVisible));
+		};
+
+		const openBookingForService = (serviceName) => {
+			serviceInputs.forEach((input) => {
+				input.checked = input.value === serviceName;
+			});
+			heroSearchInput.value = serviceName;
+			searchSuggestions.classList.remove("is-visible");
+			setBookingVisibility(true);
+			bookingSection.scrollIntoView({ behavior: "smooth", block: "start" });
+		};
+
+		const renderSuggestions = (query = "") => {
+			const normalizedQuery = query.trim().toLowerCase();
+			const filteredServices = availableServices.filter((service) =>
+				service.toLowerCase().includes(normalizedQuery)
+			);
+
+			searchSuggestions.innerHTML = filteredServices
+				.map(
+					(service) =>
+						`<button type="button" class="search-suggestion-item" data-service="${service}">${service}</button>`
+				)
+				.join("");
+
+			searchSuggestions.classList.toggle("is-visible", filteredServices.length > 0);
+		};
+
+		serviceButtons.forEach((button) => {
+			button.addEventListener("click", (event) => {
+				event.preventDefault();
+				openBookingForService(button.dataset.service);
+			});
+		});
+
+		heroSearchForm.addEventListener("submit", (event) => {
+			event.preventDefault();
+			const normalizedQuery = heroSearchInput.value.trim().toLowerCase();
+			const matchedService = availableServices.find((service) => service.toLowerCase() === normalizedQuery);
+
+			if (matchedService) {
+				openBookingForService(matchedService);
+			}
+		});
+
+		heroSearchInput.addEventListener("focus", () => {
+			renderSuggestions(heroSearchInput.value);
+		});
+
+		heroSearchInput.addEventListener("input", () => {
+			renderSuggestions(heroSearchInput.value);
+		});
+
+		heroSearchInput.addEventListener("change", () => {
+			const normalizedQuery = heroSearchInput.value.trim().toLowerCase();
+			const matchedService = availableServices.find((service) => service.toLowerCase() === normalizedQuery);
+
+			if (matchedService) {
+				openBookingForService(matchedService);
+			}
+		});
+
+		searchSuggestions.addEventListener("click", (event) => {
+			const suggestion = event.target.closest(".search-suggestion-item");
+
+			if (suggestion) {
+				openBookingForService(suggestion.dataset.service);
+			}
+		});
+
+		document.addEventListener("click", (event) => {
+			if (!heroSearchForm.contains(event.target)) {
+				searchSuggestions.classList.remove("is-visible");
+			}
+		});
+
+		bookingCloseButton.addEventListener("click", () => {
+			setBookingVisibility(false);
+		});
+	</script>
+</body>
+</html>
