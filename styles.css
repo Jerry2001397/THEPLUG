@@ -981,6 +981,8 @@ h1 {
 .stat-card {
 	padding: 1.3rem;
 	text-align: center;
+	border: 1px solid rgba(79, 183, 238, 0.28);
+	box-shadow: 0 0 0 2px rgba(79, 183, 238, 0.16), 0 0 20px rgba(79, 183, 238, 0.14), var(--shadow);
 }
 
 .stat-card strong {
