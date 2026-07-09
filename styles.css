@@ -71,23 +71,15 @@ img {
 .brand {
 	display: flex;
 	align-items: center;
-	gap: 0.75rem;
-	font-size: 1.25rem;
-	font-weight: 800;
-	letter-spacing: 0.04em;
-	text-transform: uppercase;
+	gap: 0;
 	text-shadow: var(--ink-glow);
 }
 
-.brand-mark {
-	width: 2.6rem;
-	height: 2.6rem;
-	border-radius: 50%;
-	background: linear-gradient(135deg, var(--sky-300), var(--sky-700));
-	display: grid;
-	place-items: center;
-	color: var(--white);
-	box-shadow: var(--shadow);
+.brand-logo {
+	display: block;
+	height: 3.4rem;
+	width: auto;
+	object-fit: contain;
 }
 
 .nav-links {
