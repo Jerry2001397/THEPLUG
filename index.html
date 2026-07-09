@@ -24,7 +24,8 @@
 				<a href="#reviews">Reviews</a>
 				<a href="#how-it-works">How It Works</a>
 				<a href="#contact">Contact</a>
-				<a class="button-secondary" href="#book">Book Now</a>
+				<a class="button-secondary" href="#booking-form">Book a Home Service</a>
+				<a class="button" href="#contact">Get a Business Quote</a>
 			</nav>
 		</div>
 	</header>
@@ -33,12 +34,13 @@
 		<section class="hero">
 			<div class="container hero-grid">
 				<div class="hero-copy">
-					<span class="eyebrow">Trusted home help, right on time</span>
-					<h1>Book trusted help for your home in minutes.</h1>
+					<span class="eyebrow">Every Service Your Home or Business Needs, One Tap Away</span>
 					<p>
-						From furniture assembly and moving help to cleaning, mounting, and repairs,
-						The Plug makes it easy to find skilled local support with simple booking
-						and dependable service.
+						The Plug connects homes and businesses across Lagos, Monrovia, and other
+						cities in Nigeria and Liberia with verified professionals across every
+						trade - from cleaning and maintenance to facility management, technical
+						services, and corporate support. Fast booking, clear local pricing,
+						total reliability.
 					</p>
 					<form class="hero-search" action="#services">
 						<div class="hero-search-row">
@@ -55,78 +57,196 @@
 			<div class="container">
 				<div class="section-heading">
 					<div>
-						<h2>Services for every room and every task</h2>
+						<h2>Services across homes and businesses</h2>
 						<p class="section-intro">
-							Modeled after a high-conversion home services layout, adapted for The Plug with a brighter light blue identity.
+							Choose a service scope, then click the exact service you need for bookings in Nigeria and Liberia.
 						</p>
 					</div>
 				</div>
 
-				<div class="category-grid">
-					<article class="category-card">
-						<img class="category-image" src="https://loremflickr.com/640/420/furniture,assembly?lock=11" alt="Furniture assembly service" loading="lazy">
-						<div class="category-content">
-							<h3>Assembly</h3>
-							<p>Furniture builds, storage setup, office desks, and nursery items.</p>
-							<a class="service-book-button" href="#booking-form" data-service="Assembly">Book Service Now</a>
+				<div class="service-scopes" aria-label="Service categories">
+					<div class="service-scope-switch" role="tablist" aria-label="Choose a service segment">
+						<button class="scope-toggle" type="button" role="tab" aria-selected="false" aria-controls="residential-services" id="residential-tab" data-scope="residential">Residential Services</button>
+						<button class="scope-toggle" type="button" role="tab" aria-selected="false" aria-controls="corporate-services" id="corporate-tab" data-scope="corporate">Corporate Services</button>
+					</div>
+
+					<div class="service-panel" id="residential-services" role="tabpanel" aria-labelledby="residential-tab" data-scope-panel="residential" hidden>
+						<div class="service-list" aria-label="Residential services list">
+							<article class="service-list-item">
+								<div class="service-list-copy">
+									<span class="service-list-icon" aria-hidden="true"></span>
+									<p><strong>Cleaning</strong> - routine, deep clean, post-construction, move-in or move-out.</p>
+								</div>
+								<button class="service-book-button" type="button" data-service="Cleaning">Book Service</button>
+							</article>
+							<article class="service-list-item">
+								<div class="service-list-copy">
+									<span class="service-list-icon" aria-hidden="true"></span>
+									<p><strong>Plumbing</strong> - repairs, installations, leaks, drainage.</p>
+								</div>
+								<button class="service-book-button" type="button" data-service="Plumbing">Book Service</button>
+							</article>
+							<article class="service-list-item">
+								<div class="service-list-copy">
+									<span class="service-list-icon" aria-hidden="true"></span>
+									<p><strong>Electrical</strong> - wiring, fixtures, sockets, fault diagnosis.</p>
+								</div>
+								<button class="service-book-button" type="button" data-service="Electrical">Book Service</button>
+							</article>
+							<article class="service-list-item">
+								<div class="service-list-copy">
+									<span class="service-list-icon" aria-hidden="true"></span>
+									<p><strong>AC &amp; Cooling</strong> - installation, servicing, gas recharge, repairs.</p>
+								</div>
+								<button class="service-book-button" type="button" data-service="AC & Cooling">Book Service</button>
+							</article>
+							<article class="service-list-item">
+								<div class="service-list-copy">
+									<span class="service-list-icon" aria-hidden="true"></span>
+									<p><strong>Generator Servicing</strong> - maintenance, repairs, fuel management.</p>
+								</div>
+								<button class="service-book-button" type="button" data-service="Generator Servicing">Book Service</button>
+							</article>
+							<article class="service-list-item">
+								<div class="service-list-copy">
+									<span class="service-list-icon" aria-hidden="true"></span>
+									<p><strong>Painting &amp; Tiling</strong> - interior, exterior, surface prep.</p>
+								</div>
+								<button class="service-book-button" type="button" data-service="Painting & Tiling">Book Service</button>
+							</article>
+							<article class="service-list-item">
+								<div class="service-list-copy">
+									<span class="service-list-icon" aria-hidden="true"></span>
+									<p><strong>Appliance Repairs</strong> - washing machines, refrigerators, cookers.</p>
+								</div>
+								<button class="service-book-button" type="button" data-service="Appliance Repairs">Book Service</button>
+							</article>
+							<article class="service-list-item">
+								<div class="service-list-copy">
+									<span class="service-list-icon" aria-hidden="true"></span>
+									<p><strong>Fumigation &amp; Pest Control</strong> - residential scale.</p>
+								</div>
+								<button class="service-book-button" type="button" data-service="Fumigation & Pest Control">Book Service</button>
+							</article>
+							<article class="service-list-item">
+								<div class="service-list-copy">
+									<span class="service-list-icon" aria-hidden="true"></span>
+									<p><strong>Security Systems</strong> - CCTV, door access, alarm installation.</p>
+								</div>
+								<button class="service-book-button" type="button" data-service="Security Systems">Book Service</button>
+							</article>
+							<article class="service-list-item">
+								<div class="service-list-copy">
+									<span class="service-list-icon" aria-hidden="true"></span>
+									<p><strong>Moving &amp; Relocation</strong> - packing, loading, transport coordination.</p>
+								</div>
+								<button class="service-book-button" type="button" data-service="Moving & Relocation">Book Service</button>
+							</article>
+							<article class="service-list-item">
+								<div class="service-list-copy">
+									<span class="service-list-icon" aria-hidden="true"></span>
+									<p><strong>Beauty &amp; Grooming</strong> - at-home hairdressing, barbing, spa services.</p>
+								</div>
+								<button class="service-book-button" type="button" data-service="Beauty & Grooming">Book Service</button>
+							</article>
+							<article class="service-list-item">
+								<div class="service-list-copy">
+									<span class="service-list-icon" aria-hidden="true"></span>
+									<p><strong>Catering</strong> - private chefs, event cooking, meal prep.</p>
+								</div>
+								<button class="service-book-button" type="button" data-service="Catering">Book Service</button>
+							</article>
+							<article class="service-list-item">
+								<div class="service-list-copy">
+									<span class="service-list-icon" aria-hidden="true"></span>
+									<p><strong>Laundry</strong> - pickup, washing, delivery.</p>
+								</div>
+								<button class="service-book-button" type="button" data-service="Laundry">Book Service</button>
+							</article>
 						</div>
-					</article>
-					<article class="category-card">
-						<img class="category-image" src="https://loremflickr.com/640/420/tv,mounting?lock=12" alt="TV and wall mounting service" loading="lazy">
-						<div class="category-content">
-							<h3>Mounting</h3>
-							<p>TVs, shelves, mirrors, art, curtain rods, and wall decor.</p>
-							<a class="service-book-button" href="#booking-form" data-service="Mounting">Book Service Now</a>
+					</div>
+
+					<div class="service-panel" id="corporate-services" role="tabpanel" aria-labelledby="corporate-tab" data-scope-panel="corporate" hidden>
+						<div class="service-list" aria-label="Corporate services list">
+							<article class="service-list-item">
+								<div class="service-list-copy">
+									<span class="service-list-icon" aria-hidden="true"></span>
+									<p><strong>Facility Management</strong> - scheduled maintenance contracts.</p>
+								</div>
+								<button class="service-book-button" type="button" data-service="Facility Management">Book Service</button>
+							</article>
+							<article class="service-list-item">
+								<div class="service-list-copy">
+									<span class="service-list-icon" aria-hidden="true"></span>
+									<p><strong>Electrical &amp; Power Systems</strong> - commercial wiring, transformer servicing.</p>
+								</div>
+								<button class="service-book-button" type="button" data-service="Electrical & Power Systems">Book Service</button>
+							</article>
+							<article class="service-list-item">
+								<div class="service-list-copy">
+									<span class="service-list-icon" aria-hidden="true"></span>
+									<p><strong>HVAC &amp; Air Conditioning</strong> - central systems, commercial-scale servicing.</p>
+								</div>
+								<button class="service-book-button" type="button" data-service="HVAC & Air Conditioning">Book Service</button>
+							</article>
+							<article class="service-list-item">
+								<div class="service-list-copy">
+									<span class="service-list-icon" aria-hidden="true"></span>
+									<p><strong>Elevator &amp; Escalator Servicing</strong> - maintenance, inspections, repairs.</p>
+								</div>
+								<button class="service-book-button" type="button" data-service="Elevator & Escalator Servicing">Book Service</button>
+							</article>
+							<article class="service-list-item">
+								<div class="service-list-copy">
+									<span class="service-list-icon" aria-hidden="true"></span>
+									<p><strong>Generator &amp; Power Backup</strong> - industrial generators, UPS systems.</p>
+								</div>
+								<button class="service-book-button" type="button" data-service="Generator & Power Backup">Book Service</button>
+							</article>
+							<article class="service-list-item">
+								<div class="service-list-copy">
+									<span class="service-list-icon" aria-hidden="true"></span>
+									<p><strong>IT Support &amp; Network Setup</strong> - office infrastructure, cabling, routers.</p>
+								</div>
+								<button class="service-book-button" type="button" data-service="IT Support & Network Setup">Book Service</button>
+							</article>
+							<article class="service-list-item">
+								<div class="service-list-copy">
+									<span class="service-list-icon" aria-hidden="true"></span>
+									<p><strong>Security Systems</strong> - enterprise CCTV, access control, intercom.</p>
+								</div>
+								<button class="service-book-button" type="button" data-service="Enterprise Security Systems">Book Service</button>
+							</article>
+							<article class="service-list-item">
+								<div class="service-list-copy">
+									<span class="service-list-icon" aria-hidden="true"></span>
+									<p><strong>Office Cleaning &amp; Janitorial Contracts</strong> - daily, weekly, ad hoc.</p>
+								</div>
+								<button class="service-book-button" type="button" data-service="Office Cleaning & Janitorial Contracts">Book Service</button>
+							</article>
+							<article class="service-list-item">
+								<div class="service-list-copy">
+									<span class="service-list-icon" aria-hidden="true"></span>
+									<p><strong>Fumigation &amp; Pest Control</strong> - commercial premises.</p>
+								</div>
+								<button class="service-book-button" type="button" data-service="Commercial Fumigation & Pest Control">Book Service</button>
+							</article>
+							<article class="service-list-item">
+								<div class="service-list-copy">
+									<span class="service-list-icon" aria-hidden="true"></span>
+									<p><strong>Catering for Corporate Functions</strong> - boardrooms, events, staff canteens.</p>
+								</div>
+								<button class="service-book-button" type="button" data-service="Corporate Catering">Book Service</button>
+							</article>
+							<article class="service-list-item">
+								<div class="service-list-copy">
+									<span class="service-list-icon" aria-hidden="true"></span>
+									<p><strong>Event Setup &amp; Decoration</strong> - corporate functions and launches.</p>
+								</div>
+								<button class="service-book-button" type="button" data-service="Event Setup & Decoration">Book Service</button>
+							</article>
 						</div>
-					</article>
-					<article class="category-card">
-						<img class="category-image" src="https://loremflickr.com/640/420/moving,boxes?lock=13" alt="Moving help service" loading="lazy">
-						<div class="category-content">
-							<h3>Moving Help</h3>
-							<p>Apartment moves, heavy lifting, loading, unloading, and rearranging.</p>
-							<a class="service-book-button" href="#booking-form" data-service="Moving Help">Book Service Now</a>
-						</div>
-					</article>
-					<article class="category-card">
-						<img class="category-image" src="https://loremflickr.com/640/420/house,cleaning?lock=14" alt="Home cleaning service" loading="lazy">
-						<div class="category-content">
-							<h3>Cleaning</h3>
-							<p>Routine cleaning, deep cleans, turnover prep, and reset services.</p>
-							<a class="service-book-button" href="#booking-form" data-service="Cleaning">Book Service Now</a>
-						</div>
-					</article>
-					<article class="category-card">
-						<img class="category-image" src="https://loremflickr.com/640/420/home,repair?lock=15" alt="Home repairs service" loading="lazy">
-						<div class="category-content">
-							<h3>Repairs</h3>
-							<p>Minor fixes, patchwork, touch-ups, doors, handles, and more.</p>
-							<a class="service-book-button" href="#booking-form" data-service="Repairs">Book Service Now</a>
-						</div>
-					</article>
-					<article class="category-card">
-						<img class="category-image" src="https://loremflickr.com/640/420/painting,wall?lock=16" alt="Painting service" loading="lazy">
-						<div class="category-content">
-							<h3>Painting</h3>
-							<p>Accent walls, touch-up painting, trim refresh, and room prep.</p>
-							<a class="service-book-button" href="#booking-form" data-service="Painting">Book Service Now</a>
-						</div>
-					</article>
-					<article class="category-card">
-						<img class="category-image" src="https://loremflickr.com/640/420/yardwork,garden?lock=17" alt="Outdoor help service" loading="lazy">
-						<div class="category-content">
-							<h3>Outdoor Help</h3>
-							<p>Yard cleanup, patio setup, seasonal prep, and exterior projects.</p>
-							<a class="service-book-button" href="#booking-form" data-service="Outdoor Help">Book Service Now</a>
-						</div>
-					</article>
-					<article class="category-card">
-						<img class="category-image" src="https://loremflickr.com/640/420/delivery,shopping?lock=18" alt="Errands and pickup service" loading="lazy">
-						<div class="category-content">
-							<h3>Errands</h3>
-							<p>Pickup help, deliveries, local runs, and personal assistance.</p>
-							<a class="service-book-button" href="#booking-form" data-service="Errands">Book Service Now</a>
-						</div>
-					</article>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -145,20 +265,37 @@
 					<div class="form-grid">
 						<label class="form-field form-field-wide">
 							<span>Location</span>
-							<input type="text" name="location" placeholder="Enter your city or address" required>
+							<input type="text" name="location" placeholder="Enter Lagos, Monrovia, or your address" required>
 						</label>
 
 						<fieldset class="form-field form-field-wide service-options">
 							<legend>Services</legend>
 							<div class="service-checklist">
-								<label><input type="checkbox" name="services" value="Assembly"> <span>Assembly</span></label>
-								<label><input type="checkbox" name="services" value="Mounting"> <span>Mounting</span></label>
-								<label><input type="checkbox" name="services" value="Moving Help"> <span>Moving Help</span></label>
 								<label><input type="checkbox" name="services" value="Cleaning"> <span>Cleaning</span></label>
-								<label><input type="checkbox" name="services" value="Repairs"> <span>Repairs</span></label>
-								<label><input type="checkbox" name="services" value="Painting"> <span>Painting</span></label>
-								<label><input type="checkbox" name="services" value="Outdoor Help"> <span>Outdoor Help</span></label>
-								<label><input type="checkbox" name="services" value="Errands"> <span>Errands</span></label>
+								<label><input type="checkbox" name="services" value="Plumbing"> <span>Plumbing</span></label>
+								<label><input type="checkbox" name="services" value="Electrical"> <span>Electrical</span></label>
+								<label><input type="checkbox" name="services" value="AC & Cooling"> <span>AC &amp; Cooling</span></label>
+								<label><input type="checkbox" name="services" value="Generator Servicing"> <span>Generator Servicing</span></label>
+								<label><input type="checkbox" name="services" value="Painting & Tiling"> <span>Painting &amp; Tiling</span></label>
+								<label><input type="checkbox" name="services" value="Appliance Repairs"> <span>Appliance Repairs</span></label>
+								<label><input type="checkbox" name="services" value="Fumigation & Pest Control"> <span>Fumigation &amp; Pest Control</span></label>
+								<label><input type="checkbox" name="services" value="Security Systems"> <span>Security Systems</span></label>
+								<label><input type="checkbox" name="services" value="Moving & Relocation"> <span>Moving &amp; Relocation</span></label>
+								<label><input type="checkbox" name="services" value="Beauty & Grooming"> <span>Beauty &amp; Grooming</span></label>
+								<label><input type="checkbox" name="services" value="Catering"> <span>Catering</span></label>
+								<label><input type="checkbox" name="services" value="Laundry"> <span>Laundry</span></label>
+								<label><input type="checkbox" name="services" value="Carpentry & Furniture"> <span>Carpentry &amp; Furniture</span></label>
+								<label><input type="checkbox" name="services" value="Facility Management"> <span>Facility Management</span></label>
+								<label><input type="checkbox" name="services" value="Electrical & Power Systems"> <span>Electrical &amp; Power Systems</span></label>
+								<label><input type="checkbox" name="services" value="HVAC & Air Conditioning"> <span>HVAC &amp; Air Conditioning</span></label>
+								<label><input type="checkbox" name="services" value="Elevator & Escalator Servicing"> <span>Elevator &amp; Escalator Servicing</span></label>
+								<label><input type="checkbox" name="services" value="Generator & Power Backup"> <span>Generator &amp; Power Backup</span></label>
+								<label><input type="checkbox" name="services" value="IT Support & Network Setup"> <span>IT Support &amp; Network Setup</span></label>
+								<label><input type="checkbox" name="services" value="Enterprise Security Systems"> <span>Enterprise Security Systems</span></label>
+								<label><input type="checkbox" name="services" value="Office Cleaning & Janitorial Contracts"> <span>Office Cleaning &amp; Janitorial Contracts</span></label>
+								<label><input type="checkbox" name="services" value="Commercial Fumigation & Pest Control"> <span>Commercial Fumigation &amp; Pest Control</span></label>
+								<label><input type="checkbox" name="services" value="Corporate Catering"> <span>Corporate Catering</span></label>
+								<label><input type="checkbox" name="services" value="Event Setup & Decoration"> <span>Event Setup &amp; Decoration</span></label>
 							</div>
 						</fieldset>
 
@@ -223,7 +360,7 @@
 				<div class="section-heading">
 					<div>
 						<h2>Popular projects people book fast</h2>
-						<p>Keep pricing simple and scannable so visitors can move from browsing to booking without friction.</p>
+						<p>Keep pricing simple and scannable with sample starting rates in naira and Liberian dollars.</p>
 					</div>
 					<a class="button-secondary" href="#book">See all services</a>
 				</div>
@@ -239,8 +376,8 @@
 						</div>
 						<p>Desks, bed frames, dressers, nursery items, and flat-pack builds handled cleanly.</p>
 						<div class="price-row">
-							<strong>$49</strong>
-							<span>starting price</span>
+							<strong>₦35,000 / L$7,000</strong>
+							<span>starting rate</span>
 						</div>
 					</article>
 					<article class="project-card">
@@ -253,8 +390,8 @@
 						</div>
 						<p>Secure shelf installs, clean measurements, and a polished wall finish.</p>
 						<div class="price-row">
-							<strong>$65</strong>
-							<span>starting price</span>
+							<strong>₦45,000 / L$8,500</strong>
+							<span>starting rate</span>
 						</div>
 					</article>
 					<article class="project-card">
@@ -267,8 +404,8 @@
 						</div>
 						<p>Loading, unloading, apartment transitions, and in-home furniture rearranging.</p>
 						<div class="price-row">
-							<strong>$69</strong>
-							<span>starting price</span>
+							<strong>₦55,000 / L$10,500</strong>
+							<span>starting rate</span>
 						</div>
 					</article>
 					<article class="project-card">
@@ -281,8 +418,8 @@
 						</div>
 						<p>Routine upkeep, turnover cleans, and deep refreshes for busy households.</p>
 						<div class="price-row">
-							<strong>$55</strong>
-							<span>starting price</span>
+							<strong>₦30,000 / L$6,000</strong>
+							<span>starting rate</span>
 						</div>
 					</article>
 					<article class="project-card">
@@ -295,8 +432,8 @@
 						</div>
 						<p>Patchwork, hardware fixes, adjustments, and common home maintenance tasks.</p>
 						<div class="price-row">
-							<strong>$74</strong>
-							<span>starting price</span>
+							<strong>₦50,000 / L$9,500</strong>
+							<span>starting rate</span>
 						</div>
 					</article>
 					<article class="project-card">
@@ -309,8 +446,8 @@
 						</div>
 						<p>Strong installs, clean cable layout, and balanced screen placement.</p>
 						<div class="price-row">
-							<strong>$79</strong>
-							<span>starting price</span>
+							<strong>₦60,000 / L$11,500</strong>
+							<span>starting rate</span>
 						</div>
 					</article>
 				</div>
@@ -390,7 +527,7 @@
 					</article>
 					<article class="trust-card">
 						<h3>Transparent pricing</h3>
-						<p>Simple starting prices and clearly presented service options keep expectations aligned.</p>
+						<p>Simple local pricing in naira and Liberian dollars keeps service expectations clear.</p>
 					</article>
 				</div>
 			</div>
@@ -447,7 +584,7 @@
 						<a href="#projects">Furniture Assembly</a>
 						<a href="#projects">TV Mounting</a>
 						<a href="#projects">Home Cleaning</a>
-						<a href="#projects">Help Moving</a>
+						<a href="#projects">Help MovHI, ing</a>
 					</div>
 				</article>
 				<article class="footer-card footer-company-card">
@@ -456,7 +593,8 @@
 						<a href="#services">Services</a>
 						<a href="#reviews">Reviews</a>
 						<a href="#how-it-works">How It Works</a>
-						<a href="#book">Book Now</a>
+						<a href="#booking-form">Book a Home Service</a>
+						<a href="#contact">Get a Business Quote</a>
 						<a href="#contact">Contact</a>
 					</div>
 				</article>
@@ -485,14 +623,37 @@
 		const bookingCloseButton = document.querySelector(".booking-close");
 		const menuToggle = document.querySelector(".menu-toggle");
 		const primaryNav = document.querySelector("#primary-nav");
+		const serviceScopes = document.querySelector(".service-scopes");
 		const heroSearchForm = document.querySelector(".hero-search");
 		const heroSearchInput = document.querySelector("#service-search");
 		const searchSuggestions = document.querySelector("#service-suggestions");
 		const serviceButtons = document.querySelectorAll(".service-book-button");
+		const scopeToggles = document.querySelectorAll(".scope-toggle");
+		const scopePanels = document.querySelectorAll(".service-panel");
 		const navLinks = document.querySelectorAll(".nav-links a");
 		const serviceInputs = document.querySelectorAll('input[name="services"]');
 		const availableServices = Array.from(serviceInputs, (input) => input.value);
 		let ignoreNextSearchClick = false;
+
+		const setActiveScope = (scopeName) => {
+			scopeToggles.forEach((toggle) => {
+				const isActive = toggle.dataset.scope === scopeName;
+				toggle.classList.toggle("is-active", isActive);
+				toggle.setAttribute("aria-selected", String(isActive));
+			});
+
+			scopePanels.forEach((panel) => {
+				const isActive = panel.dataset.scopePanel === scopeName;
+				panel.classList.toggle("is-active", isActive);
+				panel.hidden = !isActive;
+			});
+		};
+
+		const toggleScope = (scopeName) => {
+			const activeToggle = document.querySelector(".scope-toggle.is-active");
+			const activeScope = activeToggle ? activeToggle.dataset.scope : null;
+			setActiveScope(activeScope === scopeName ? null : scopeName);
+		};
 
 		const setBookingVisibility = (isVisible) => {
 			bookingSection.classList.toggle("is-visible", isVisible);
@@ -529,6 +690,12 @@
 			button.addEventListener("click", (event) => {
 				event.preventDefault();
 				openBookingForService(button.dataset.service);
+			});
+		});
+
+		scopeToggles.forEach((toggle) => {
+			toggle.addEventListener("click", () => {
+				toggleScope(toggle.dataset.scope);
 			});
 		});
 
@@ -582,6 +749,10 @@
 		});
 
 		document.addEventListener("click", (event) => {
+			if (serviceScopes && !serviceScopes.contains(event.target)) {
+				setActiveScope(null);
+			}
+
 			if (!heroSearchForm.contains(event.target)) {
 				searchSuggestions.classList.remove("is-visible");
 			}
@@ -604,6 +775,8 @@
 		bookingCloseButton.addEventListener("click", () => {
 			setBookingVisibility(false);
 		});
+
+		setActiveScope(null);
 	</script>
 </body>
 </html>
