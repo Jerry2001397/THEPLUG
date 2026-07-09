@@ -1321,14 +1321,14 @@ h1 {
 
 	.hero-copy {
 		max-width: 100%;
-		text-align: left;
+		text-align: center;
 	}
 
 	.hero-copy h1,
 	.hero-copy p {
 		max-width: 100%;
-		margin-left: 0;
-		margin-right: 0;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.hero-copy h1 {
